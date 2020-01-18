@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>IQ Test</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">IQ Test</h1>
+        <div class="questions" id="first">
+            <p class="question__title">1.	Каким числом следует заменить знак вопроса?<br>
+                25 29 33 37 41 ?</p>
+            <div class="answers">
+                <button class="btn fa" onClick="checkFirstQuestion('1')">43</button>
+                <button class="btn sa" onClick="checkFirstQuestion('2')">44</button>
+                <button class="btn ta" onClick="checkFirstQuestion('3')">45</button>
+            </div>
+            <div class="confirm-center"><button class="confirm" onClick="QuestionReady()">Следующий вопрос</button></div>
+        </div>
+        <div class="questions" id="second">
+            <p class="question__title">2.	Найдите слово, которое необходимо вставить в скобки, чтобы закончить первое слово и начать последнее слово. Какую букву содержит это слово?<br>
+                БАЛ ( . . . ) ТУР</p>
+            <div class="answers">
+                <button class="btn fa" onClick="checkSecondQuestion('1')">А</button>
+                <button class="btn sa" onClick="checkSecondQuestion('2')">Н</button>
+                <button class="btn ta" onClick="checkSecondQuestion('3')">С</button>
+            </div>
+            <div class="confirm-center"><button class="confirm" id="next" onclick="QuestionReady()">Следующий вопрос</button></div>
+        </div>
+        <div class="questions" id="third">
+            <p class="question__title">3.	Какой буквой следует заменить знак вопроса?<br>
+                Б Г Е Ж И ?</p>
+            <div class="answers">
+                <button class="btn fa" onClick="checkThirdQuestion('1')">К</button>
+                <button class="btn sa" onClick="checkThirdQuestion('2')">Н</button>
+                <button class="btn ta" onClick="checkThirdQuestion('3')">Л</button>
+            </div>
+            <div class="confirm-center"><button class="confirm" id="next" onclick="QuestionReady()">Следующий вопрос</button></div>
+        </div>
+        <div class="questions" id="fourth">
+            <p class="question__title">4.	Сколько зеленых автомобилей в день производит автозавод?<br>
+                Автозавод производит 1000 кузовов в день для белых, черных, зеленых и красных
+           автомобилей в пропорции  4 : 8 : 7 : 1  соответственно.</p>
+            <div class="answers">
+                <button class="btn fa" onClick="checkFourthQuestion('1')">320</button>
+                <button class="btn sa" onClick="checkFourthQuestion('2')">340</button>
+                <button class="btn ta" onClick="checkFourthQuestion('3')">350</button>
+            </div>
+            <div class="confirm-center"><button class="confirm" id="next" onclick="QuestionReady()">Следующий вопрос</button></div>
+        </div>
+        <div class="questions" id="fifth">
+            <p class="question__title">5.	Найдите слово, которое необходимо вставить в скобки, чтобы закончить первое слово и начать последнее слово. Какую букву содержит это слово?<br>
+                ПАР ( . . ) ЛАДА</p>
+            <div class="answers">
+                <button class="btn fa" onClick="checkFifthQuestion('1')">У</button>
+                <button class="btn sa" onClick="checkFifthQuestion('2')">О</button>
+                <button class="btn ta" onClick="checkFifthQuestion('3')">А</button>
+            </div>
+            <div class="confirm-center"><button class="confirm" id="next" onclick="QuestionReady()">Следующий вопрос</button></div>
+        </div>
+        <div class="questions" id="sixth">
+            <p class="question__title">6.	Какое слово должно стоять в нижних скобках?<br>
+                13	20	(БОЛТ)	2	16<br>
+                18	20	( . . . . )	20	16
+                </p>
+            <div class="answers">
+                <button class="btn fa" onClick="checkSixthQuestion('1')">Торт</button>
+                <button class="btn sa" onClick="checkSixthQuestion('2')">Воск</button>
+                <button class="btn ta" onClick="checkSixthQuestion('3')">Торг</button>
+            </div>
+            <div class="confirm-center"><button class="confirm" id="next" onclick="QuestionReady()">Следующий вопрос</button></div>
+        </div>
+        <div class="questions" id="seventh">
+            <p class="question__title">7.	Определите название города, зашифрованного в анаграмме. В какой стране находится этот город?<br>
+                ЛОТК МОСЬГ
+                </p>
+            <div class="answers">
+                <button class="btn fa" onClick="checkSeventhQuestion('1')">США</button>
+                <button class="btn sa" onClick="checkSeventhQuestion('2')">Швеция</button>
+                <button class="btn ta" onClick="checkSeventhQuestion('3')">Испания</button>
+            </div>
+            <div class="confirm-center"><button class="confirm" id="next" onclick="QuestionReady()">Следующий вопрос</button></div>
+        </div>
+        <div class="questions" id="eighth">
+            <p class="question__title">8.	Какими двумя числами следует заменить знаки вопроса?<br>
+                2 8 6 24 18 ? ?
+                </p>
+            <div class="answers">
+                <button class="btn fa" onClick="checkEighthQuestion('1')">58  42</button>
+                <button class="btn sa" onClick="checkEighthQuestion('2')">61  48</button>
+                <button class="btn ta" onClick="checkEighthQuestion('3')">72  54</button>
+            </div>
+            <div class="confirm-center"><button class="confirm" id="next" onclick="QuestionReady()">Следующий вопрос</button></div>
+        </div>
+        <div class="questions" id="ninth">
+            <p class="question__title">9.	Что здесь является лишним?
+                </p>
+            <div class="answers">
+                <button class="btn fa" onClick="checkNinthQuestion('1')">ПОЭМА</button>
+                <button class="btn sa" onClick="checkNinthQuestion('2')">БАЙКА</button>
+                <button class="btn ta" onClick="checkNinthQuestion('3')">ПОГОВОРКА</button>
+            </div>
+            <div class="confirm-center"><button class="confirm" id="next" onclick="QuestionReady()">Следующий вопрос</button></div>
+        </div>
+        <div class="questions" id="tenth">
+            <p class="question__title">10.	Какое слово не является анаграммой цветов?
+                </p>
+            <div class="answers">
+                <button class="btn fa" onClick="checkTenthQuestion('1')">ПЮЛЬ ТАН</button>
+                <button class="btn sa" onClick="checkTenthQuestion('2')">ОЗАР</button>
+                <button class="btn ta" onClick="checkTenthQuestion('3')">ТОЛЬ ЧАН ОП</button>
+            </div>
+            <div class="confirm-center"><button class="confirm" id="result" onclick="complete()">Проверить</button></div>
+        </div>
+        <div class="result" id="checkResult">
+            <p class="result-title">Your result : <span id="CounterText"></span>/10</p>
+            <p id="comment"></p>
+        </div>
+    </header>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
