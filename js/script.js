@@ -3,27 +3,6 @@ var Counter = 0,
     secondAns = document.querySelectorAll('.sa'),
     thirdAns = document.querySelectorAll('.ta');
 
-
-// function zero() {
-//     for( let i of firstAns ) {
-//         i.style.backgroundColor = "rgba(55, 41, 95, 0.75)";
-
-//         i.disabled = false;
-//     }
-
-//     for( let i of secondAns ) {
-//         i.style.backgroundColor = "rgba(55, 41, 95, 0.75)";
-
-//         i.disabled = false;
-//     }
-
-//     for( let i of thirdAns ) {
-//         i.style.backgroundColor = "rgba(55, 41, 95, 0.75)";
-
-//         i.disabled = false;
-//     }
-// }
-
 function checkFirstQuestion(n) {
     firstAns[0].style.backgroundColor = "#C85858"; 
     secondAns[0].style.backgroundColor = "#C85858";
@@ -54,7 +33,7 @@ function checkThirdQuestion(n) {
     firstAns[2].style.backgroundColor = "#C85858";
     secondAns[2].style.backgroundColor = "#C85858";
     thirdAns[2].style.backgroundColor = "#5BC660";
-    if(n == 2){
+    if(n == 1){
         Counter++;
     }
     firstAns[2].disabled = true;
