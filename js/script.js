@@ -30,9 +30,9 @@ function checkSecondQuestion(n) {
 }
 
 function checkThirdQuestion(n) {
-    firstAns[2].style.backgroundColor = "#C85858";
+    firstAns[2].style.backgroundColor = "#5BC660";
     secondAns[2].style.backgroundColor = "#C85858";
-    thirdAns[2].style.backgroundColor = "#5BC660";
+    thirdAns[2].style.backgroundColor = "#C85858";
     if(n == 1){
         Counter++;
     }
